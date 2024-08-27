@@ -42,7 +42,7 @@ const Users = () => {
   };
 
   return (
-    <div className="text-[black] h-full w-full px-4 py-3 " style={{backgroundColor:"rgb(222 193 193)"}}>
+    <div className="text-[black] h-full w-full px-4 py-3" style={{backgroundColor:"rgb(222 193 193)", paddingBottom:"100px"}}>
       <Searchbar
         status={status}
         setStatus={setStatus}
@@ -102,7 +102,7 @@ const Users = () => {
         )}
       </div>
       <div className="w-full mt-3 pb-4 md:pb-0">
-        <div className="w-full mx-auto">
+        <div className="w-full mx-auto" >
           {totalUsers > 20
             ? [...Array(Math.floor(totalUsers / 20))].map((page, index) => (
                 <button
