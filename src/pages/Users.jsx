@@ -17,11 +17,7 @@ const Users = () => {
   useEffect(() => {
     const getAllUsers = async () => {
       setLoading(true);
-      //https://heliverse-assignment-production.up.railway.app
-      // const response = await axios.get(
-      //   "http://localhost:4000/api/users"
-      // );
-      const response = await axios.get("http://localhost:4000/api/users"); // No trailing slash
+      const response = await axios.get("https://heliverse-assignment-backend-mu98.onrender.com/api/users"); 
       const data = await response.data;
       setUsers(data.users);
       setTotalUsers(data.totalLength);
@@ -32,7 +28,7 @@ const Users = () => {
   }, []);
 
   const getUsers = async () => {
-    let baseUrl = `http://localhost:4000/api/users?page=${currentPage}`;
+    let baseUrl = `https://heliverse-assignment-backend-mu98.onrender.com/api/users?page=${currentPage}`;
     if (name !== "") baseUrl += `&name=${name}`;
     if (status !== "") baseUrl += `&available=${status}`;
     if (domain !== "") baseUrl += `&domain=${domain}`;
