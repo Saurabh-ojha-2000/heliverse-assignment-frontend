@@ -25,7 +25,7 @@ const Sidebar = () => {
             alt="logo"
             className="h-8 w-8 rounded-full"
           />
-          <h1 className="text-lg font-bold ">Heliverse Assignment</h1>
+          <h1 className="text-lg font-bold ">Visualization Dashboard</h1>
         </div>
 
         <div
